@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    /* background-color: #e8e8e8; */
+    background: rgb(4, 115, 233);
+    background: linear-gradient(
+        90deg,
+        rgba(4, 115, 233, 1) 0%,
+        rgba(0, 212, 255, 1) 100%
+    );
+}
+/*
+    CONTAINER
+*/
+.container {
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    min-height: 450px;
+    margin: 2% auto;
+    border-radius: 10px;
+    background-color: #f1f6f9;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/*
+    HEADER
+*/
+
+.menu {
+    width: 100%;
+    height: auto;
+    max-height: 60px;
+    padding: 20px; /*para todo el contenido*/
+    background-color: #30475e;
+    color: #ffffff;
+}
+
+.menu .nav {
+    width: 100%;
+    /*FLEX-BOX*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .nav ul li {
+    display: inline-block;
+}
+
+.menu .nav ul li a {
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #e4e4e4;
+    font-size: 17px;
+}
+
+.menu .nav ul li a:hover {
+    color: #ffffff;
+    transition: 0.3s;
+}
+/*
+    CONTENIDO INICIO
+*/
+.container .main {
+    width: 100%;
+    /* background-color: #f1f6f9; */
+    padding: 20px; /*para todo el contenido*/
+}
+
+.container .index-container {
+    /*FLEX-BOX*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .main .intro {
+    width: 100%;
+    padding-left: 100px;
+    /*FLEX-BOX*/
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+
+/*tittle*/
+.container .main .intro h2 {
+    font-weight: bold;
+    color: #3f3f3f;
+    font-size: 70px;
+}
+
+/*text*/
+.container .main .intro p,
+a {
+    font-weight: normal;
+    color: #3f3f3f;
+    font-size: 20px;
+}
+
+.container .main .img-me {
+    width: 100%;
+    /*FLEX-BOX*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-round {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.container .m-index > p{
+    width: 80%;
+    font-size: 18px;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.container .m-index hr{
+    border: 1px solid #c2c2c2;
+    margin: 20px 0;
+}
+
+/*
+    buttons
+*/
+.button {
+    width: auto;
+    max-height: 50px;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.conocer-mas {
+    margin: 10px 0;
+    background-color: #ff4b5c;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.conocer-mas:hover {
+    background-color: #f73246;
+    transition: 0.3s;
+}
+
+/*
+    CONTENIDO QUIEN SOY
+*/
+
+.container .m-quiensoy hr {
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #c2c2c2;
+}
+
+.hackmx-container,
+.gcp-container {
+    /*FLEX-BOX*/
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.hackmx-container p,
+.gcp-container p {
+    width: 70%;
+}
+
+.hackmx {
+    background-image: url(./img/me_hackmx.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gcp {
+    background-image: url(./img/me_gcp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+    CONTENIDO FUTURO
+*/
+.m-futuro p:last-child{
+    margin: 10px 0;
+}
+
+.offsec {
+    width: 200px;
+    height: 200px;
+    background-image: url(./img/offensive.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cisco {
+    width: 200px;
+    height: 200px;
+    background-image: url(./img/cisco.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.offsec-container,
+.cisco-container {
+    /*FLEX-BOX*/
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.offsec-container p,
+.cisco-container p {
+    width: 70%;
+}
+
+/*
+    CONTENIDO PROYECTOS
+*/
+.pro-container{
+    width: 60%;
+    background-color: #eaeaea;
+    margin: 10px 0px;
+    border-radius: 5px;
+    overflow: hidden;
+    /*FLEX-BOX*/
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.pro-container .left-margin{
+    width: 2%;
+    background-color:#30475e; 
+    /* #30475e;ff4b5c */
+}
+
+.pro-container .pro-content{
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.pro-container .pro-content a{
+    font-size: 16px;
+}
